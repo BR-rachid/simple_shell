@@ -39,8 +39,6 @@ Example:
 $ cat text
 echo 'holberton'
 $ ./sodash text
-'holberton'
-$
 ```
 
 ### Environment
@@ -60,7 +58,7 @@ The current working directory as set by the **cd** command.
 
 ```
 $ echo "echo $PWD" | ./sodash
-/home/vagrant/holberton/simple_shell
+/home/vagrant/main/simple_shell
 ```
 
 #### OLDPWD
@@ -68,7 +66,7 @@ The previous working directory as set by the **cd** command.
 
 ```
 $ echo "echo $OLDPWD" | ./sodash
-/home/vagrant/holberton/bog-062019-test_suite
+/home/vagrant/main/bog-062019-test_suite
 ```
 
 #### PATH
@@ -115,7 +113,7 @@ $ ./sodash
 Example:
 ```
 $ echo "echo $PWD" | ./sodash
-/home/vagrant/holberton/simple_shell
+/home/vagrant/main/simple_shell
 ```
 
 #### $?
@@ -142,7 +140,7 @@ $ echo "echo $$" | ./sodash
 
 Example:
 ```
-$ echo "echo 'holberton' #this will be ignored!" | ./sodash
+$ echo "echo 'main' #this will be ignored!" | ./sodash
 'holberton'
 ```
 
@@ -165,11 +163,11 @@ $ echo "echo 'hello' ; echo 'world'" | ./sodash
 
 Example:
 ```
-$ echo "error! && echo 'holberton'" | ./sodash
+$ echo "error! && echo 'main'" | ./sodash
 ./shellby: 1: error!: not found
-$ echo "echo 'my name is' && echo 'holberton'" | ./sodash
+$ echo "echo 'my name is' && echo 'main'" | ./sodash
 'my name is'
-'holberton'
+'main'
 ```
 
 #### || - OR logical operator
